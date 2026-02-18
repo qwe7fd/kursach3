@@ -1,4 +1,4 @@
-﻿namespace kursach
+﻿﻿namespace kursach
 {
     partial class AddHerb
     {
@@ -66,10 +66,10 @@
             // 
             txtHabitat.Location = new Point(680, 88);
             txtHabitat.Margin = new Padding(5, 5, 5, 5);
-            txtHabitat.Multiline = true;
+            txtHabitat.Multiline = false;
             txtHabitat.Name = "txtHabitat";
             txtHabitat.PlaceholderText = "Место произрастния";
-            txtHabitat.Size = new Size(277, 189);
+            txtHabitat.Size = new Size(277, 36);
             txtHabitat.TabIndex = 3;
             // 
             // txtDescription
