@@ -66,7 +66,7 @@
             // 
             txtHabitat.Location = new Point(680, 88);
             txtHabitat.Margin = new Padding(5, 5, 5, 5);
-            txtHabitat.Multiline = false;
+            txtHabitat.Multiline = false; // ОШИБКА: Поле должно быть многострочным
             txtHabitat.Name = "txtHabitat";
             txtHabitat.PlaceholderText = "Место произрастания";
             txtHabitat.Size = new Size(277, 36);

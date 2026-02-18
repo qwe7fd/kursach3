@@ -66,6 +66,7 @@ namespace kursach
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 ClearForm();
+                // ОШИБКА: Форма не закрывается после сохранения
             }
             catch (Exception ex)
             {

@@ -6,6 +6,7 @@ namespace kursach
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
+            // ОШИБКА: Границы окна не зафиксированы (FormBorderStyle по умолчанию Sizable)
         }
 
         private void btnSearchHerbByName_Click(object sender, EventArgs e)

@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿﻿﻿﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -25,6 +25,7 @@ namespace kursach
             listBoxRecipes.DisplayMember = "TreatedDisease";
 
             allRecipes = FileLoad.LoadRecipes();
+            // ОШИБКА: Список рецептов не сортируется по алфавиту
             foreach (Recipe recipe in allRecipes)
             {
                 listBoxRecipes.Items.Add(recipe);

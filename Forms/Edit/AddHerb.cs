@@ -36,10 +36,12 @@ namespace kursach
         {
             try
             {
+                // ОШИБКА: Отсутствует проверка на уникальность имени растения
                 string herbEntry = CreateHerbEntry();
 
                 File.AppendAllLines("herbs.txt", new[] { herbEntry }, Encoding.UTF8);
 
+                // ОШИБКА: Сообщение не содержит названия добавленного растения
                 MessageBox.Show("Растение успешно добавлено!", "Успех",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
 
