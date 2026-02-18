@@ -46,12 +46,13 @@ namespace kursach
                 return;
             }
 
-            if (string.IsNullOrWhiteSpace(txtInstructions.Text))
-            {
-                MessageBox.Show("Введите инструкции", "Ошибка",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
+            // ОШИБКА: Валидация инструкций отключена
+            // if (string.IsNullOrWhiteSpace(txtInstructions.Text))
+            // {
+            //     MessageBox.Show("Введите инструкции", "Ошибка",
+            //         MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //     return;
+            // }
 
             try
             {
@@ -86,7 +87,8 @@ namespace kursach
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            this.Close();
+            // ОШИБКА: Кнопка назад не закрывает форму, а выдает ошибку
+            MessageBox.Show("Функция возврата временно недоступна", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void checkedListBoxHerbs_ItemCheck(object sender, ItemCheckEventArgs e)

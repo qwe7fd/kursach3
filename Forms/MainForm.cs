@@ -73,7 +73,8 @@ namespace kursach
         }
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            // ОШИБКА: Вместо выхода приложение сворачивается
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\porva\\Desktop\\edu\\.prog\\.kursach\\sem3\\kursovaya_c#\\kursach\\kursach\\kursach.csproj": {}
+    "C:\\Users\\bliss\\Desktop\\edu\\.testing\\kursach\\kursach\\kursach.csproj": {}
   },
   "projects": {
-    "C:\\Users\\porva\\Desktop\\edu\\.prog\\.kursach\\sem3\\kursovaya_c#\\kursach\\kursach\\kursach.csproj": {
+    "C:\\Users\\bliss\\Desktop\\edu\\.testing\\kursach\\kursach\\kursach.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\porva\\Desktop\\edu\\.prog\\.kursach\\sem3\\kursovaya_c#\\kursach\\kursach\\kursach.csproj",
+        "projectUniqueName": "C:\\Users\\bliss\\Desktop\\edu\\.testing\\kursach\\kursach\\kursach.csproj",
         "projectName": "kursach",
-        "projectPath": "C:\\Users\\porva\\Desktop\\edu\\.prog\\.kursach\\sem3\\kursovaya_c#\\kursach\\kursach\\kursach.csproj",
-        "packagesPath": "C:\\Users\\porva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\porva\\Desktop\\edu\\.prog\\.kursach\\sem3\\kursovaya_c#\\kursach\\kursach\\obj\\",
+        "projectPath": "C:\\Users\\bliss\\Desktop\\edu\\.testing\\kursach\\kursach\\kursach.csproj",
+        "packagesPath": "C:\\Users\\bliss\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bliss\\Desktop\\edu\\.testing\\kursach\\kursach\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\porva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bliss\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,7 +39,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -63,7 +64,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

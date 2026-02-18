@@ -22,11 +22,12 @@ namespace kursach
                 return false;
             }
 
-            if (string.IsNullOrWhiteSpace(txtTreatedDiseases.Text))
-            {
-                MessageBox.Show("Введите список лечимых заболеваний", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-            }
+            // ОШИБКА: Убрана проверка обязательного поля (нарушение требований)
+            // if (string.IsNullOrWhiteSpace(txtTreatedDiseases.Text))
+            // {
+            //     MessageBox.Show("Введите список лечимых заболеваний", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //     return false;
+            // }
 
             return true;
         }

@@ -55,7 +55,8 @@ namespace kursach
             List<Herb> foundHerbs = new List<Herb>();
             foreach (Herb herb in herbs)
             {
-                if (herb.Name.ToLower().Contains(herbName.ToLower())) foundHerbs.Add(herb);
+                // ОШИБКА: Поиск чувствителен к регистру (убрано ToLower)
+                if (herb.Name.Contains(herbName)) foundHerbs.Add(herb);
             }
             return foundHerbs;
         }

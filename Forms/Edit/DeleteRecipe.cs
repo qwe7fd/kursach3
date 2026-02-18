@@ -73,23 +73,18 @@ namespace kursach
                 return;
             }
 
-            DialogResult result = MessageBox.Show(
-                $"Вы уверены, что хотите удалить рецепт от '{listBoxRecipes.SelectedItem}'?",
-                "Подтверждение удаления",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question);
+            // ОШИБКА: Удалено диалоговое окно подтверждения
+            // DialogResult result = MessageBox.Show(...)
+            
+            // Удаляем сразу без спроса
+            string recipeToDelete = listBoxRecipes.SelectedItem.ToString();
+            Deleter.Delete<Recipe>(listBoxRecipes, "recipes.txt",
+                recipe => $"{recipe.TreatedDisease};{recipe.Instructions};{string.Join(",", recipe.Ingredients.Select(h => h.Name))}");
 
-            if (result == DialogResult.Yes)
-            {
-                string recipeToDelete = listBoxRecipes.SelectedItem.ToString();
-                Deleter.Delete<Recipe>(listBoxRecipes, "recipes.txt",
-                    recipe => $"{recipe.TreatedDisease};{recipe.Instructions};{string.Join(",", recipe.Ingredients.Select(h => h.Name))}");
-
-                allRecipes = FileLoad.LoadRecipes();
-                listBoxRecipes.Items.Clear();
-                panelRecipeDetails.Controls.Clear();
-                foreach (Recipe recipe in allRecipes) listBoxRecipes.Items.Add(recipe);
-            }
+            allRecipes = FileLoad.LoadRecipes();
+            listBoxRecipes.Items.Clear();
+            panelRecipeDetails.Controls.Clear();
+            foreach (Recipe recipe in allRecipes) listBoxRecipes.Items.Add(recipe);
         }
 
         private void btnBack_Click(object sender, EventArgs e)
