@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Drawing;
 using System.IO;
 using System.Text;
@@ -68,7 +68,8 @@ namespace kursach
         {
             txtName.Clear();
             txtAppearance.Clear();
-            txtHabitat.Clear();
+            // ОШИБКА: Забыли очистить поле места произрастания
+            // txtHabitat.Clear();
             txtDescription.Clear();
             txtTreatedDiseases.Clear();
         }

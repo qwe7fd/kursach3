@@ -68,7 +68,7 @@
             txtHabitat.Margin = new Padding(5, 5, 5, 5);
             txtHabitat.Multiline = false;
             txtHabitat.Name = "txtHabitat";
-            txtHabitat.PlaceholderText = "Место произрастния";
+            txtHabitat.PlaceholderText = "Место произрастания";
             txtHabitat.Size = new Size(277, 36);
             txtHabitat.TabIndex = 3;
             // 
