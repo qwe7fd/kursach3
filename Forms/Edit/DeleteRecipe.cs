@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -73,11 +73,19 @@ namespace kursach
                 return;
             }
 
-            // ОШИБКА: Удалено диалоговое окно подтверждения
-            // DialogResult result = MessageBox.Show(...)
-            
-            // Удаляем сразу без спроса
-            string recipeToDelete = listBoxRecipes.SelectedItem.ToString();
+            // ОШИБКА: Логическая ошибка. Код удаления находится вне блока if.
+            // Удаление произойдет даже если нажать "Нет".
+            DialogResult result = MessageBox.Show(
+                $"Вы уверены, что хотите удалить рецепт?",
+                "Подтверждение",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                // Логика должна быть здесь
+            }
+
             Deleter.Delete<Recipe>(listBoxRecipes, "recipes.txt",
                 recipe => $"{recipe.TreatedDisease};{recipe.Instructions};{string.Join(",", recipe.Ingredients.Select(h => h.Name))}");
 

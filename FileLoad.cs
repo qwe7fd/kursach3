@@ -1,4 +1,4 @@
-﻿using kursach;
+﻿﻿using kursach;
 using System.Text;
 
 public class FileLoad
@@ -9,6 +9,9 @@ public class FileLoad
 
         try
         {
+            if (!File.Exists("herbs.txt"))
+                return herbs;
+
             string[] lines = File.ReadAllLines("herbs.txt", Encoding.UTF8);
             foreach (string line in lines)
             {

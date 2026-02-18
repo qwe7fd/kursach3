@@ -16,6 +16,8 @@ namespace kursach
         public AddRecipe()
         {
             InitializeComponent();
+            // ОШИБКА: Заголовок формы не устанавливается в "Новый рецепт", остается дефолтным
+            // Text = "Новый рецепт"; 
             LoadAvailableHerbs();
         }
 
@@ -46,13 +48,12 @@ namespace kursach
                 return;
             }
 
-            // ОШИБКА: Валидация инструкций отключена
-            // if (string.IsNullOrWhiteSpace(txtInstructions.Text))
-            // {
-            //     MessageBox.Show("Введите инструкции", "Ошибка",
-            //         MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //     return;
-            // }
+            // ОШИБКА: Ошибка Copy-Paste. Проверяется txtDisease вместо txtInstructions.
+            if (string.IsNullOrWhiteSpace(txtDisease.Text)) 
+            {
+                MessageBox.Show("Введите инструкции", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             try
             {
@@ -87,8 +88,8 @@ namespace kursach
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            // ОШИБКА: Кнопка назад не закрывает форму, а выдает ошибку
-            MessageBox.Show("Функция возврата временно недоступна", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            // ОШИБКА: Пустой метод. Программист забыл написать this.Close();
+            
         }
 
         private void checkedListBoxHerbs_ItemCheck(object sender, ItemCheckEventArgs e)

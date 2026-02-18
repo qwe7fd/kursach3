@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -55,8 +55,8 @@ namespace kursach
             List<Herb> foundHerbs = new List<Herb>();
             foreach (Herb herb in herbs)
             {
-                // ОШИБКА: Поиск чувствителен к регистру (убрано ToLower)
-                if (herb.Name.Contains(herbName)) foundHerbs.Add(herb);
+                // ОШИБКА: Используется StartsWith вместо Contains. Нельзя найти по части слова.
+                if (herb.Name.ToLower().StartsWith(herbName.ToLower())) foundHerbs.Add(herb);
             }
             return foundHerbs;
         }
