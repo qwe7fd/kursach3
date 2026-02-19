@@ -89,7 +89,7 @@ namespace kursach
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            // ОШИБКА: Пустой метод. Программист забыл написать this.Close();
+            // ОШИБКА: Пустой метод.
             
         }
 
