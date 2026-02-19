@@ -36,7 +36,7 @@ namespace kursach
         private void btnSearchRecipeByHerb_Click(object sender, EventArgs e)
         {
             this.Hide();
-            // ОШИБКА: Открывается не то окно (ошибка Copy-Paste)
+            // ОШИБКА: Открывается не то окно
             SearchRecipeByDisease form4 = new SearchRecipeByDisease();
             form4.ShowDialog();
             this.Show();
