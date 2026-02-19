@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿﻿﻿﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -25,7 +25,6 @@ namespace kursach
         {
             availableHerbs = FileLoad.LoadHerbs();
 
-            // ОШИБКА: Список ингредиентов не сортируется
             checkedListBoxHerbs.Items.Clear();
             foreach (Herb herb in availableHerbs)
             {
